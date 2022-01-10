@@ -1,0 +1,62 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    height: 70px;
+    position: relative;
+}
+
+.linkContainer{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-family: verdana;
+    text-transform: capitalize;
+}
+
+.ImAppleinc{
+    color: white;
+    font-size: 25px;
+}
+
+.BiShoppingBag{
+    color: white;
+    font-size: 25px;
+}
+
+.GiHamburgerMenu{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+@media (max-width: 768px){
+  
+    .linkContainer{
+       position: absolute;
+       flex-direction: column;
+       top: 70px;
+       background-color: black; 
+       align-items: center;
+    }
+
+    .link{
+        text-decoration: none;
+        color: white;
+        font-family: verdana;
+        text-transform: capitalize;
+        padding: 40px;
+    }
+
+    .GiHamburgerMenu{
+        display: flex;
+        cursor: pointer;
+    }
+}
+
